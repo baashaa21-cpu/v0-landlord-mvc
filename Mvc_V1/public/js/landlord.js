@@ -1,17 +1,14 @@
 function exportFeedback() {
-  console.log("[v0] Exporting feedback report")
   // Implementation for exporting feedback data
   alert("Feedback report exported successfully!")
 }
 
 function viewFeedbackDetails(feedbackId) {
-  console.log("[v0] Viewing feedback details for:", feedbackId)
   // Implementation for viewing detailed feedback
   alert("Opening feedback details for " + feedbackId)
 }
 
 function respondToFeedback(feedbackId) {
-  console.log("[v0] Responding to feedback:", feedbackId)
   // Implementation for responding to feedback
   const response = prompt("Enter your response:")
   if (response) {
@@ -25,19 +22,16 @@ function respondToFeedback(feedbackId) {
 }
 
 function createNotification() {
-  console.log("[v0] Creating new notification")
   // Implementation for creating notifications
   alert("Opening notification composer...")
 }
 
 function notificationSettings() {
-  console.log("[v0] Opening notification settings")
   // Implementation for notification settings
   alert("Opening notification settings...")
 }
 
 function sendRentReminder() {
-  console.log("[v0] Sending rent reminder")
   if (confirm("Send rent reminder to all tenants?")) {
     alert("Rent reminder sent successfully!")
     updateNotificationStats()
@@ -45,7 +39,6 @@ function sendRentReminder() {
 }
 
 function sendMaintenanceUpdate() {
-  console.log("[v0] Sending maintenance update")
   const message = prompt("Enter maintenance update message:")
   if (message) {
     alert("Maintenance update sent successfully!")
@@ -54,7 +47,6 @@ function sendMaintenanceUpdate() {
 }
 
 function sendAnnouncement() {
-  console.log("[v0] Sending announcement")
   const announcement = prompt("Enter announcement message:")
   if (announcement) {
     alert("Announcement sent successfully!")
@@ -63,7 +55,6 @@ function sendAnnouncement() {
 }
 
 function sendEmergencyAlert() {
-  console.log("[v0] Sending emergency alert")
   const alert_msg = prompt("Enter emergency alert message:")
   if (alert_msg && confirm("This will send an emergency alert to all tenants. Continue?")) {
     alert("Emergency alert sent successfully!")
@@ -72,12 +63,10 @@ function sendEmergencyAlert() {
 }
 
 function viewNotificationDetails(notificationId) {
-  console.log("[v0] Viewing notification details:", notificationId)
   alert("Opening notification details for " + notificationId)
 }
 
 function resendNotification(notificationId) {
-  console.log("[v0] Resending notification:", notificationId)
   if (confirm("Resend this notification?")) {
     alert("Notification resent successfully!")
     updateNotificationStats()
